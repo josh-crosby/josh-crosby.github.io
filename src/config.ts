@@ -10,20 +10,21 @@ export const siteConfig = {
   },
   aboutMe:
     "Hello and welcome to my portfolio! I am currently studying Computer Engineering at the University of Illinois Chicago with a dream of using to solve problems and improve lives.",
-  skillCategories: [
-    {
-      category: "Programming Languages",
-      skills: ["C/C++", "Python", "Java", "Assembly (ARM/x86)", "Verilog", "VHDL", "SystemVerilog"]
-    }, 
-    {
-      category: "EDA Tools",
-      skills: ["Vivado", "Quartus Prime", "ModelSim", "KiCad", "LTSpice", "Cadence", "Wireshark"]
-    }, 
-    {
-      category: "Core Concepts",
-      skills: ["Digital Signal Processing", "Computer Architecture", "VLSI Design", "Control Systems", "Communication Protocols", "AI/ML Integration"]
-    } 
-  ],
+  skills: ["C/C++", "Python", "Java", "Verilog", "VHDL", "Vivado", "Quartus Prime"],
+    // skillCategories: [
+  //   {
+  //     category: "Programming Languages",
+  //     skills: ["C/C++", "Python", "Java", "Assembly (ARM/x86)", "Verilog", "VHDL", "SystemVerilog"]
+  //   }, 
+  //   {
+  //     category: "EDA Tools",
+  //     skills: ["Vivado", "Quartus Prime", "ModelSim", "KiCad", "LTSpice", "Cadence", "Wireshark"]
+  //   }, 
+  //   {
+  //     category: "Core Concepts",
+  //     skills: ["Digital Signal Processing", "Computer Architecture", "VLSI Design", "Control Systems", "Communication Protocols", "AI/ML Integration"]
+  //   } 
+  // ],
   projects: [
     {
       name: "AI Dev Roundup Newsletter",

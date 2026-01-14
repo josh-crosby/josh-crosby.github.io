@@ -72,23 +72,19 @@ export const siteConfig = {
   ],
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
+      school: "University of Illinois Chicago",
+      degree: "Bachelor of Science in Computer Engineering",
+      dateRange: "2024 - 2026",
       achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
+        "",
       ],
     },
     {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
+      school: "University of Illinois Urbana-Champaign",
+      degree: "Bachelor of Science in Computer Engineering",
+      dateRange: "2020 - 2024",
       achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
+        "",
       ],
     },
   ],

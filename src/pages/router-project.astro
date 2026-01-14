@@ -1,0 +1,129 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { siteConfig } from "../config";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Router Project - {siteConfig.name}</title>
+  </head>
+  <body>
+    <Header />
+    <main class="container mx-auto px-6 py-12 max-w-4xl">
+      <!-- Back button -->
+      <a 
+        href="/#projects" 
+        class="inline-flex items-center text-sm text-gray-600 hover:text-gray-900 mb-8"
+      >
+        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        Back to Projects
+      </a>
+
+      <!-- Title -->
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        Embedded Systems / Hardware Reverse Engineering
+      </h1>
+      <h2 class="text-2xl text-gray-600 mb-8">
+        UART Access on Linksys WRT54G v6
+      </h2>
+
+      <!-- Overview Section -->
+      <section class="mb-12">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Overview</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          <!-- Add your overview text here -->
+          Add your project overview here...
+        </p>
+      </section>
+
+      <!-- Hardware Setup Section -->
+      <section class="mb-12">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Hardware Setup</h3>
+        <div class="mb-6">
+          <img 
+            src="/images/router-setup.jpg" 
+            alt="Physical router setup" 
+            class="w-full rounded-lg shadow-lg mb-4"
+          />
+          <p class="text-sm text-gray-500 italic">Physical setup of the router</p>
+        </div>
+        <p class="text-gray-600 leading-relaxed">
+          <!-- Add hardware setup description -->
+          Describe your hardware setup here...
+        </p>
+      </section>
+
+      <!-- Wiring Diagram Section -->
+      <section class="mb-12">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Wiring Diagram</h3>
+        <div class="mb-6">
+          <img 
+            src="/images/router-wiring-diagram.png" 
+            alt="Wiring diagram" 
+            class="w-full rounded-lg shadow-lg mb-4"
+          />
+          <p class="text-sm text-gray-500 italic">UART connection wiring diagram</p>
+        </div>
+        <p class="text-gray-600 leading-relaxed">
+          <!-- Add wiring explanation -->
+          Explain the wiring connections here...
+        </p>
+      </section>
+
+      <!-- Software/Configuration Section -->
+      <section class="mb-12">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Software & Configuration</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          <!-- Add software/config details -->
+          Describe the software tools and configuration process...
+        </p>
+        <!-- Optional: Add code blocks if needed -->
+        <pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto mb-4"><code>// Example command
+screen /dev/ttyUSB0 115200</code></pre>
+      </section>
+
+      <!-- Results/Performance Section -->
+      <section class="mb-12">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Results & Performance</h3>
+        <p class="text-gray-600 leading-relaxed">
+          <!-- Add results -->
+          Describe what you achieved and the results...
+        </p>
+      </section>
+
+      <!-- Challenges & Solutions Section -->
+      <section class="mb-12">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Challenges & Solutions</h3>
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <span class="inline-block w-2 h-2 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0" />
+            <div>
+              <strong class="text-gray-900">Challenge:</strong>
+              <span class="text-gray-600"> Describe a challenge...</span>
+            </div>
+          </li>
+          <!-- Add more challenges -->
+        </ul>
+      </section>
+
+      <!-- Technologies Used -->
+      <section class="mb-12">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Technologies Used</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-sm font-medium">UART</span>
+          <span class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-sm font-medium">Hardware RE</span>
+          <span class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-sm font-medium">Embedded Systems</span>
+          <!-- Add more tags -->
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

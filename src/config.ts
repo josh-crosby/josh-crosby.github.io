@@ -34,10 +34,10 @@ export const siteConfig = {
       skills: ["C/C++", "Python", "Cybersecurity Fundamentals", "Embedded System Security", "Post-Quantum Cryptography", "TPM 2.0 Integration", "Formal Documentation & Specification"],
     },
     {
-      name: "Embedded Systems / Hardware Hacking - UART Access on Linkysys WRT54G v6",
+      name: "Embedded Systems / Hardware Reverse Engineering - UART Access on Linkysys WRT54G v6",
       description:
         "Systematically probed the router’s PCB to identify UART pins for firmware access. Some pins were partially filled, so I used continuity tests and voltage measurements to distinguish ground, TX, and RX. I monitored voltage fluctuations to identify active communication lines, all while ensuring safe interaction with 3.3V logic circuits. This process involved soldering, understanding PCB layout, signal flow, and serial communication protocols.",
-      link: "",
+      link: "/router-project",
       skills: ["C/C++", "Communication Protocols", "Soldering", "PCB"],
     },
     {

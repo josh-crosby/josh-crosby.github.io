@@ -10,7 +10,7 @@ export const siteConfig = {
   },
   aboutMe:
     "Hello and welcome to my portfolio! I am currently studying Computer Engineering at the University of Illinois Chicago with a dream of using computers to solve problems and improve lives.",
-  skills: ["C/C++", "Python", "Java", "Verilog", "VHDL", "LTSpice", "Cadence", "Wireshark", "VLSI Design", "Digital Signal Processing", "Communication Protocols"],
+  skills: ["C/C++", "Python", "Java", "Verilog", "VHDL", "PHP", "LTSpice", "Cadence", "Wireshark", "VLSI Design", "Digital Signal Processing", "Communication Protocols", ],
     // skillCategories: [
   //   {
   //     category: "Programming Languages",
@@ -26,6 +26,13 @@ export const siteConfig = {
   //   } 
   // ],
   projects: [
+    {
+      name: "Post-Quantum Email Communication System (Senior Design Project, In Progress)",
+      description:
+        "Designing a secure email communication system resilient to future quantum attacks. The system leverages post-quantum cryptography algorithms (Kyber for key exchange, Dilithium for digital signatures) and integrates a TPM 2.0 for secure key storage. Developed in Python and C++, the project focuses on end-to-end encryption, authentication, and usability. Currently in the planning and architecture phase, including formal specifications, threat modeling, and system design documentation.",
+      link: "",
+      skills: ["C/C++", "Python", "Cybersecurity Fundamentals", "Embedded System Security", "Post-Quantum Cryptography", "TPM 2.0 Integration", "Formal Documentation & Specification"],
+    },
     {
       name: "Embedded Systems / Hardware Hacking - UART Access on Linkysys WRT54G v6",
       description:
@@ -45,7 +52,7 @@ export const siteConfig = {
       description:
         "Architeched and deployed a scalable web scraping system using Selenium, Scrapy for automated product data extraction while adhering to websites 'robot.txt'. Additionally, I designed custom SQL database schema and implemented ETL pipelines with secure API endpoints to serve classified product data to client applications.",
       link: "",
-      skills: ["Python", "Web Scraping", "Data Pipelining"],
+      skills: ["Python", "Web Scraping", "Data Pipelining", "Selenium", "Scrapy", "PHP"],
     },
   ],
   experience: [

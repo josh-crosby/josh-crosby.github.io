@@ -22,7 +22,7 @@ export const siteConfig = {
     {
       category: "Core Concepts",
       skills: ["Digital Signal Processing", "Computer Architecture", "VLSI Design", "Control Systems", "Communication Protocols", "AI/ML Integration"]
-    }, 
+    } 
   ],
   projects: [
     {

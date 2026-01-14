@@ -159,10 +159,22 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
             )
           }
         </nav>
-        <p class="text-sm text-gray-500">
-          © {new Date().getFullYear()}
-          {siteConfig.name}. All rights reserved.
-        </p>
+        <div class="flex flex-col items-end gap-1">
+          <p class="text-sm text-gray-500">
+            © {new Date().getFullYear()}
+            {siteConfig.name}. All rights reserved.
+          </p>
+          <p class="text-xs text-gray-400">
+            Thanks to Ryan Fitzgerald for the template! <a 
+              href="https://github.com/RyanFitzgerald/devportfolio" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="hover:text-gray-600 transition-colors"
+            >
+              Ryan Fitzgerald
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   </div>

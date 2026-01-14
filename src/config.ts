@@ -9,7 +9,7 @@ export const siteConfig = {
     // github: "https://github.com/jcrosby3uic",
   },
   aboutMe:
-    "Hello and welcome to my portfolio! I am currently studying Computer Engineering at the University of Illinois Chicago with a dream of using to solve problems and improve lives.",
+    "Hello and welcome to my portfolio! I am currently studying Computer Engineering at the University of Illinois Chicago with a dream of using computers to solve problems and improve lives.",
   skills: ["C/C++", "Python", "Java", "Verilog", "VHDL", "LTSpice", "Cadence", "Wireshark", "VLSI Design", "Digital Signal Processing", "Communication Protocols"],
     // skillCategories: [
   //   {

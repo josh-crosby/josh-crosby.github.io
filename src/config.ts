@@ -10,7 +10,7 @@ export const siteConfig = {
   },
   aboutMe:
     "Hello and welcome to my portfolio! I am currently studying Computer Engineering at the University of Illinois Chicago with a dream of using to solve problems and improve lives.",
-  skills: ["C/C++", "Python", "Java", "Verilog", "VHDL", "Vivado", "Quartus Prime"],
+  skills: ["C/C++", "Python", "Java", "Verilog", "VHDL", "LTSpice", "Cadence", "Wireshark", "VLSI Design", "Digital Signal Processing", "Communication Protocols"],
     // skillCategories: [
   //   {
   //     category: "Programming Languages",
@@ -27,25 +27,25 @@ export const siteConfig = {
   // ],
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "Embedded Systems / Hardware Hacking - UART Access on Linkysys WRT54G v6",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: [],
+        "Systematically probed the router’s PCB to identify UART pins for firmware access. Some pins were partially filled, so I used continuity tests and voltage measurements to distinguish ground, TX, and RX. I monitored voltage fluctuations to identify active communication lines, all while ensuring safe interaction with 3.3V logic circuits. This process involved soldering, understanding PCB layout, signal flow, and serial communication protocols.",
+      link: "",
+      skills: ["C/C++", "Communication Protocols", "Soldering", "PCB"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "ASL Recognition Glove Prototype",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: [],
+        "Developed a wearable glove equipped with flex sensors and an Arduino Nano RP2040 to capture hand movements and gestures. Integrated a machine learning model to recognize individual American Sign Language (ASL) letters in real time, translating hand shapes into corresponding digital outputs.",
+      link: "",
+      skills: ["Sensor Interfacing", "Embedded Programming", "Microcontrollers", "AI Implementation"],
     },
     {
-      name: "ExtensionKit",
+      name: "E-Commerce Product Classification System",
       description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: [],
+        "Architeched and deployed a scalable web scraping system using Selenium, Scrapy for automated product data extraction while adhering to websites 'robot.txt'. Additionally, I designed custom SQL database schema and implemented ETL pipelines with secure API endpoints to serve classified product data to client applications.",
+      link: "",
+      skills: ["Python", "Web Scraping", "Data Pipelining"],
     },
   ],
   experience: [

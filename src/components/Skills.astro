@@ -1,0 +1,21 @@
+---
+import { siteConfig } from "../config";
+---
+
+{siteConfig.skillCategories && siteConfig.skillCategories.length > 0 && (
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      {siteConfig.skillCategories.map((category) => (
+        <div class="skill-category">
+          <h3>{category.category}</h3>
+          <div class="skills-grid">
+            {category.skills.map((skill) => (
+              <span class="skill-tag">{skill}</span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+)}

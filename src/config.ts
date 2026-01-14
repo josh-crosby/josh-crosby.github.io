@@ -1,17 +1,29 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
+  name: "Josh Crosby",
+  title: "Computer Engineering Student at University of Illinois Chicago",
+  description: "Portfolio website of Josh Crosby",
   accentColor: "#1d4ed8",
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "jcrosby3@uic.edu",
+    linkedin: "https://www.linkedin.com/in/josh-crosby/",
+    // github: "https://github.com/jcrosby3uic",
   },
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "Hello and welcome to my portfolio! I am currently studying Computer Engineering at the University of Illinois Chicago with a dream of using to solve problems and improve lives.",
+  skillCategories: [
+    {
+      category: "Programming Languages",
+      skills: ["C/C++", "Python", "Java", "Assembly (ARM/x86)", "Verilog", "VHDL", "SystemVerilog"]
+    }, 
+    {
+      category: "EDA Tools",
+      skills: ["Vivado", "Quartus Prime", "ModelSim", "KiCad", "LTSpice", "Cadence", "Wireshark"]
+    }, 
+    {
+      category: "Core Concepts",
+      skills: ["Digital Signal Processing", "Computer Architecture", "VLSI Design", "Control Systems", "Communication Protocols", "AI/ML Integration"]
+    }, 
+  ],
   projects: [
     {
       name: "AI Dev Roundup Newsletter",

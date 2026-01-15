@@ -87,7 +87,7 @@ import "../styles/global.css";
         <h3 class="text-2xl font-bold text-gray-900 mb-4">Software & Configuration</h3>
         <p class="text-gray-600 leading-relaxed mb-4">
           <!-- Add software/config details -->
-          Describe the software tools and configuration process...
+          By using the screen command on Mac, we are able to connect to the routers serial port through the Arduino and access the bootloader shell.
         </p>
         <!-- Optional: Add code blocks if needed -->
         <pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto mb-4"><code>// Example command
@@ -97,9 +97,19 @@ screen /dev/ttyUSB0 115200</code></pre>
       <!-- Results/Performance Section -->
       <section class="mb-12">
         <h3 class="text-2xl font-bold text-gray-900 mb-4">Results & Performance</h3>
+        <img 
+            src="/images/boot-screenshot.png" 
+            alt="Boot screenshot" 
+            class="w-full rounded-lg shadow-lg mb-4"
+          />
+        <img 
+            src="/images/shell-screenshot.png" 
+            alt="Shell screenshot" 
+            class="w-full rounded-lg shadow-lg mb-4"
+          />
         <p class="text-gray-600 leading-relaxed">
           <!-- Add results -->
-          Describe what you achieved and the results...
+          We are able to see and verify boot sequence as well as shell accesss. 
         </p>
       </section>
 
@@ -111,7 +121,13 @@ screen /dev/ttyUSB0 115200</code></pre>
             <span class="inline-block w-2 h-2 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0" />
             <div>
               <strong class="text-gray-900">Challenge:</strong>
-              <span class="text-gray-600"> Describe a challenge...</span>
+              <span class="text-gray-600"> For a relatively 'simple' project, I faced challenges mainly due to this being my first project in the cybersecurity space and the first PCB I have worked with that had filled in holes where headers would normally go. 
+              After my inital soldering process, I was surpised to see any text pop up in my terminal during the first boot. I was initally confused because the text looked like 
+              garbled ASCII but after further research I learned it could be a host of different reasons, baud rate mismatching, poor soldering connections, or incorrect cables and more. 
+              This led me to refine my approach and essentially restart the project, learning how to use a multimeter to verify pin functionality by watching voltage levels during boot, 
+              which also helped me realize I had soldered to the wrong pad on the PCB in my first attempt. After a fresh soldering connection, to the correct pins, I was sucessfully able to 
+              access the router. 
+              </span>
             </div>
           </li>
           <!-- Add more challenges -->

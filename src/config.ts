@@ -44,7 +44,7 @@ export const siteConfig = {
       name: "ASL Recognition Glove Prototype",
       description:
         "Developed a wearable glove equipped with flex sensors and an Arduino Nano RP2040 to capture hand movements and gestures. Integrated a machine learning model to recognize individual American Sign Language (ASL) letters in real time, translating hand shapes into corresponding digital outputs.",
-      link: "",
+      link: "/asl-glove",
       skills: ["Sensor Interfacing", "Embedded Programming", "Microcontrollers", "AI Implementation"],
     },
     {

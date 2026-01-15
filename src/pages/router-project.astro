@@ -39,7 +39,7 @@ import "../styles/global.css";
         <h3 class="text-2xl font-bold text-gray-900 mb-4">Overview</h3>
         <p class="text-gray-600 leading-relaxed mb-4">
           <!-- Add your overview text here -->
-          Add your project overview here...
+          Systematically probed the router’s PCB to identify UART pins for firmware access. Some pins were partially filled, so I used continuity tests and voltage measurements to distinguish ground, TX, and RX. I monitored voltage fluctuations to identify active communication lines, all while ensuring safe interaction with 3.3V logic circuits. This process involved soldering, understanding PCB layout, signal flow, and serial communication protocols.
         </p>
       </section>
 
@@ -48,15 +48,20 @@ import "../styles/global.css";
         <h3 class="text-2xl font-bold text-gray-900 mb-4">Hardware Setup</h3>
         <div class="mb-6">
           <img 
-            src="/images/router-setup.jpg" 
+            src="/images/physical-setup.JPG" 
             alt="Physical router setup" 
+            class="w-full rounded-lg shadow-lg mb-4"
+          />
+          <img 
+            src="/images/physical-pad.JPG" 
+            alt="Physical router pad soldering" 
             class="w-full rounded-lg shadow-lg mb-4"
           />
           <p class="text-sm text-gray-500 italic">Physical setup of the router</p>
         </div>
         <p class="text-gray-600 leading-relaxed">
           <!-- Add hardware setup description -->
-          Describe your hardware setup here...
+          The hardware setup consisted of a Linksys WRT54G v6 router with dupont wires soldered directly to the UART test points on the PCB. An Arduino Nano RP2040 was used as a USB-to-serial adapter to interface between the router's UART pins and a host computer. The primary objective was to gain bootloader and console access to the router, allowing for low-level system interaction and potential firmware modifications. The UART connection provided direct access to the router's boot sequence and Linux shell, bypassing the standard web interface.
         </p>
       </section>
 
@@ -65,7 +70,7 @@ import "../styles/global.css";
         <h3 class="text-2xl font-bold text-gray-900 mb-4">Wiring Diagram</h3>
         <div class="mb-6">
           <img 
-            src="/images/router-wiring-diagram.png" 
+            src="/images/wiring-diagram.png" 
             alt="Wiring diagram" 
             class="w-full rounded-lg shadow-lg mb-4"
           />
@@ -73,7 +78,7 @@ import "../styles/global.css";
         </div>
         <p class="text-gray-600 leading-relaxed">
           <!-- Add wiring explanation -->
-          Explain the wiring connections here...
+          Straightforward wiring setup, RX->TX, TX->RX, GND->GND
         </p>
       </section>
 

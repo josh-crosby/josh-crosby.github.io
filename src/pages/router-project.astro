@@ -70,7 +70,7 @@ import "../styles/global.css";
         <h3 class="text-2xl font-bold text-gray-900 mb-4">Wiring Diagram</h3>
         <div class="mb-6">
           <img 
-            src="/images/wiring-diagram.png" 
+            src="/images/wiring-diagram.jpg" 
             alt="Wiring diagram" 
             class="w-full rounded-lg shadow-lg mb-4"
           />
@@ -121,9 +121,10 @@ screen /dev/ttyUSB0 115200</code></pre>
             <span class="inline-block w-2 h-2 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0" />
             <div>
               <strong class="text-gray-900">Challenge:</strong>
-              <span class="text-gray-600"> For a relatively 'simple' project, I faced challenges mainly due to this being my first project in the cybersecurity space and the first PCB I have worked with that had filled in holes where headers would normally go. 
+              <span class="text-gray-600"> For a relatively 'simple' project, I faced challenges mainly due to this being my first project in the cybersecurity space and the first PCB I have worked with that had filled in holes where headers would normally go.
+              I also was unable to connect directly to ground pins because of (what I believe) was some oxidized coating that prevented soldering, which led me to use continuity mode on my multimeter to find a different ground as shown in the picture of the physical setup. 
               After my inital soldering process, I was surpised to see any text pop up in my terminal during the first boot. I was initally confused because the text looked like 
-              garbled ASCII but after further research I learned it could be a host of different reasons, baud rate mismatching, poor soldering connections, or incorrect cables and more. 
+              garbled ASCII but after further research I learned it could be due to a host of different reasons: baud rate mismatching, poor soldering connections, or incorrect cables and more. 
               This led me to refine my approach and essentially restart the project, learning how to use a multimeter to verify pin functionality by watching voltage levels during boot, 
               which also helped me realize I had soldered to the wrong pad on the PCB in my first attempt. After a fresh soldering connection, to the correct pins, I was sucessfully able to 
               access the router. 
@@ -138,9 +139,8 @@ screen /dev/ttyUSB0 115200</code></pre>
       <section class="mb-12">
         <h3 class="text-2xl font-bold text-gray-900 mb-4">Technologies Used</h3>
         <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-sm font-medium">UART</span>
-          <span class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-sm font-medium">Hardware RE</span>
-          <span class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-sm font-medium">Embedded Systems</span>
+          <span class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-sm font-medium">Arduino Nano RP2040 Connect</span>
+          <span class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-sm font-medium">Linksys WRT54G v6 Router</span>
           <!-- Add more tags -->
         </div>
       </section>

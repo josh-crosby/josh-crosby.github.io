@@ -35,10 +35,7 @@ import "../styles/global.css";
       <section class="mb-12">
         <h3 class="text-2xl font-bold text-gray-900 mb-4">Overview</h3>
         <p class="text-gray-600 leading-relaxed mb-4">
-            This project involved developing a wearable glove capable of recognizing American Sign Language (ASL) gestures in real-time. Using flex sensors and an accelerometer, the glove captures hand movements and finger positions, translating them into recognized ASL letters or words. The system aims to bridge communication gaps for the deaf and hard-of-hearing community by providing an accessible, portable translation device.
-        </p>
-        <p class="text-gray-600 leading-relaxed">
-            The prototype demonstrates proof-of-concept for gesture recognition and lays groundwork for future iterations with improved accuracy, expanded vocabulary, and wireless connectivity.
+          Add your overview text here
         </p>
       </section>
 
@@ -48,16 +45,13 @@ import "../styles/global.css";
         <div class="mb-6">
           <img 
             src="/images/asl-glove-setup.jpg" 
-            alt="ASL glove physical setup" 
+            alt="Physical glove setup" 
             class="w-full rounded-lg shadow-lg mb-4"
           />
-          <p class="text-sm text-gray-500 italic">The completed ASL recognition glove prototype</p>
+          <p class="text-sm text-gray-500 italic">Physical setup of the glove</p>
         </div>
-        <p class="text-gray-600 leading-relaxed mb-4">
-          The glove uses five flex sensors positioned along each finger to measure bend angles, providing data on finger positions. A 6-axis accelerometer (MPU6050) mounted on the back of the hand tracks hand orientation and movement in 3D space. All sensors connect to an Arduino microcontroller that processes the analog signals and performs gesture classification.
-        </p>
         <p class="text-gray-600 leading-relaxed">
-          The sensors are sewn into a standard work glove for comfort and flexibility, with wiring carefully routed to avoid restricting hand movement. Power is supplied via USB connection during development, with future plans for battery operation.
+          Add hardware setup description
         </p>
       </section>
 
@@ -66,14 +60,14 @@ import "../styles/global.css";
         <h3 class="text-2xl font-bold text-gray-900 mb-4">Wiring Diagram</h3>
         <div class="mb-6">
           <img 
-            src="/images/asl-glove-diagram.png" 
-            alt="Circuit wiring diagram" 
+            src="/images/asl-wiring-diagram.png" 
+            alt="Wiring diagram" 
             class="w-full rounded-lg shadow-lg mb-4"
           />
-          <p class="text-sm text-gray-500 italic">Sensor connections to Arduino microcontroller</p>
+          <p class="text-sm text-gray-500 italic">Sensor wiring diagram</p>
         </div>
         <p class="text-gray-600 leading-relaxed">
-          Each flex sensor connects through a voltage divider circuit to the Arduino analog inputs (A0-A4). The MPU6050 accelerometer communicates via I2C protocol using the SDA and SCL pins. Pull-up resistors ensure stable I2C communication. All components share common ground, with the Arduino 5V rail providing power to the sensors.
+          Add wiring explanation
         </p>
       </section>
 
@@ -81,27 +75,15 @@ import "../styles/global.css";
       <section class="mb-12">
         <h3 class="text-2xl font-bold text-gray-900 mb-4">Software & Configuration</h3>
         <p class="text-gray-600 leading-relaxed mb-4">
-          The software pipeline consists of three main stages: sensor data acquisition, feature extraction, and gesture classification. The Arduino continuously samples all sensors at 50Hz, filtering noise using a simple moving average. Raw sensor values are normalized and combined into feature vectors.
+          Add software/config details
         </p>
-        <p class="text-gray-600 leading-relaxed mb-4">
-          A trained machine learning model (decision tree or neural network) runs on the microcontroller to classify gestures based on the feature vectors. The model was trained on labeled data collected from multiple users performing ASL gestures. Recognition results are transmitted to a computer via serial communication for display or further processing.
-        </p>
-        <pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto mb-4"><code>// Example: Reading flex sensor values
-int flexValues[5];
-for(int i = 0; i < 5; i++) {
-  flexValues[i] = analogRead(A0 + i);
-  flexValues[i] = map(flexValues[i], 0, 1023, 0, 100);
-}</code></pre>
       </section>
 
       <!-- Results/Performance Section -->
       <section class="mb-12">
         <h3 class="text-2xl font-bold text-gray-900 mb-4">Results & Performance</h3>
-        <p class="text-gray-600 leading-relaxed mb-4">
-          The prototype successfully recognizes 15 static ASL letter gestures with approximately 85% accuracy under controlled conditions. Recognition latency averages 200ms from gesture formation to classification, providing near real-time feedback. The system performs best with deliberate, well-formed gestures and shows reduced accuracy with rapid transitions or intermediate hand positions.
-        </p>
         <p class="text-gray-600 leading-relaxed">
-          Testing revealed that individual calibration significantly improves accuracy, as hand sizes and sensor placement vary between users. The accelerometer data proved particularly useful for distinguishing gestures with similar finger positions but different hand orientations (e.g. P vs K).
+          Add results
         </p>
       </section>
 
@@ -113,30 +95,7 @@ for(int i = 0; i < 5; i++) {
             <span class="inline-block w-2 h-2 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0" />
             <div>
               <strong class="text-gray-900">Challenge:</strong>
-              <span class="text-gray-600"> Sensor drift and calibration - Flex sensors exhibited baseline drift over time and varied significantly between users.</span>
-              <br/>
-              <strong class="text-gray-900">Solution:</strong>
-              <span class="text-gray-600"> Implemented automatic recalibration routine and user-specific normalization profiles to account for individual hand characteristics.</span>
-            </div>
-          </li>
-          <li class="flex items-start">
-            <span class="inline-block w-2 h-2 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0" />
-            <div>
-              <strong class="text-gray-900">Challenge:</strong>
-              <span class="text-gray-600"> Distinguishing similar gestures - Many ASL letters have subtle differences that were difficult for the simple sensor setup to detect.</span>
-              <br/>
-              <strong class="text-gray-900">Solution:</strong>
-              <span class="text-gray-600"> Combined accelerometer data with flex sensor readings to capture hand orientation and added a confidence threshold to reject ambiguous classifications.</span>
-            </div>
-          </li>
-          <li class="flex items-start">
-            <span class="inline-block w-2 h-2 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0" />
-            <div>
-              <strong class="text-gray-900">Challenge:</strong>
-              <span class="text-gray-600"> Limited computational resources on Arduino - Running complex ML models on the microcontroller proved challenging.</span>
-              <br/>
-              <strong class="text-gray-900">Solution:</strong>
-              <span class="text-gray-600"> Optimized the model architecture and used quantized weights to reduce memory footprint while maintaining acceptable accuracy.</span>
+              <span class="text-gray-600"> Describe a challenge</span>
             </div>
           </li>
         </ul>
@@ -147,11 +106,7 @@ for(int i = 0; i < 5; i++) {
         <h3 class="text-2xl font-bold text-gray-900 mb-4">Technologies Used</h3>
         <div class="flex flex-wrap gap-2">
           <span class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-sm font-medium">Arduino</span>
-          <span class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-sm font-medium">Machine Learning</span>
           <span class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-sm font-medium">Flex Sensors</span>
-          <span class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-sm font-medium">MPU6050</span>
-          <span class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-sm font-medium">I2C</span>
-          <span class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-sm font-medium">Signal Processing</span>
         </div>
       </section>
     </main>

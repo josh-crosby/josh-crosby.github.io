@@ -73,7 +73,7 @@ import "../styles/global.css";
           <p class="text-sm text-gray-500 italic">Sensor connections to Arduino microcontroller</p>
         </div>
         <p class="text-gray-600 leading-relaxed">
-          Each flex sensor connects through a voltage divider circuit to the Arduino's analog inputs (A0-A4). The MPU6050 accelerometer communicates via I2C protocol using the SDA and SCL pins. Pull-up resistors ensure stable I2C communication. All components share common ground, with the Arduino's 5V rail providing power to the sensors.
+          Each flex sensor connects through a voltage divider circuit to the Arduino analog inputs (A0-A4). The MPU6050 accelerometer communicates via I2C protocol using the SDA and SCL pins. Pull-up resistors ensure stable I2C communication. All components share common ground, with the Arduino 5V rail providing power to the sensors.
         </p>
       </section>
 
@@ -101,7 +101,7 @@ for(int i = 0; i < 5; i++) {
           The prototype successfully recognizes 15 static ASL letter gestures with approximately 85% accuracy under controlled conditions. Recognition latency averages 200ms from gesture formation to classification, providing near real-time feedback. The system performs best with deliberate, well-formed gestures and shows reduced accuracy with rapid transitions or intermediate hand positions.
         </p>
         <p class="text-gray-600 leading-relaxed">
-          Testing revealed that individual calibration significantly improves accuracy, as hand sizes and sensor placement vary between users. The accelerometer data proved particularly useful for distinguishing gestures with similar finger positions but different hand orientations (e.g., 'P' vs 'K').
+          Testing revealed that individual calibration significantly improves accuracy, as hand sizes and sensor placement vary between users. The accelerometer data proved particularly useful for distinguishing gestures with similar finger positions but different hand orientations (e.g. P vs K).
         </p>
       </section>
 
